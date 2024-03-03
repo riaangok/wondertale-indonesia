@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Kalimantan
+{% endblock %}
+
+{% block main %}
+
+    <h2>The Tales of Kalimantan</h2>
+    <div class="container-lg">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card" style="width: 19rem;">
+                    <img src="{{ url_for('static', filename='images/batu_menangis.jpg') }}" class="card-img-top" width="269" height="161">
+                    <div class="card-body">
+                        <h5 class="card-title">Batu Menangis</h5>
+                        <p class="card-text">Alkisah di atas sebuah bukit di Kalimantan Barat, hiduplah ibu bersama anak perempuannya</p>
+                        <a href="/Batu_Menangis" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card" style="width: 19rem;">
+                    <img src="{{ url_for('static', filename='images/pangeran_biawak.jpg') }}" class="card-img-top" width="269" height="161">
+                    <div class="card-body">
+                        <h5 class="card-title">Pangeran Biawak dan Putri Bungsu</h5>
+                        <p class="card-text">Dahulu kala berdirilah sebuah kerajaan yang terletak di tepi sungai.</p>
+                        <a href="/Pangeran_Biawak_and_Putri_Bungsu" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-4">
+                <div class="card" style="width: 19rem;">
+                    <img src="{{ url_for('static', filename='images/danau_lipan.jpg') }}" class="card-img-top" width="269" height="161">
+                    <div class="card-body">
+                        <h5 class="card-title">Asal Usul Danau Lipan</h5>
+                        <p class="card-text">Dahulu kala negeri Muara Kaman diperintah oleh seorang ratu bernama Ratu Aji Bidara Putih.</p>
+                        <a href="/Asal_Usul_Danau_Lipan" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <video autoplay loop muted play-inline class="background-video">
+        <source src="{{ url_for('static', filename='ocean.mp4') }}" type="video/mp4">
+    </video>
+
+{% endblock %}

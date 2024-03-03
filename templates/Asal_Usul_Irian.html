@@ -1,0 +1,65 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Asal Usul Irian
+{% endblock %}
+
+{% block main %}
+
+    <h1>Asal Usul Irian</h1>
+    <div class="wrapper">
+    <!-- paragraf 1 start-->
+        <section id="malin">
+            <div>
+            <!-- ini versi embedding dari link youtube tinggal copy aja linknya dr youtube kesini -->
+                <iframe width="429" height="239" src="https://www.youtube.com/embed/dRiUeERsJUA?si=aYKRvS9Z4j6y95UX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <figure>
+                    <figcaption>
+                        Listen to the audio of "Asal Usul Irian story"
+                    </figcaption>
+                    <audio controls src="static/audios/asal_usul_irian.ogg">
+                        Browser tidak mendukung tag <code>audio</code>
+                    </audio>
+                </figure>
+            </div>
+
+
+            <div class="column1">
+                <p>Cerita rakyat ini dimulai pada zaman dulu sekali ada seorang pria yang mengidap penyakit kudis bernama mananamakrdi. Ia merupakan anak bungsu dari satu keluarga yang tinggal di kampung Sopen, Biak Barat. Penyakit kudis yang dideritanya membuat dia diusir dengan paksa oleh kakak-kakaknya. Akhirnya, Mananamakrdi pun berjalan pergi hingga sampai ke pinggir pantai dan bertemu dengan nelayan. Nelayan itu memberikan tumpangan kepadanya untuk berlayar ke pulau Miokbudi di Biak Timur. Ketika sampai pulau, Mananamakrdi langsung mendirikan gubuk kecil untuk tempat tinggalnya.
+                    Ia mulai menanam sagu dan membuat tuak demi bertahan hidup sehari-harinya. Pohon kelapa yang subur di sekeliling gubuknya. Ia manfaatkan air niranya untuk dibuat tuak. Suatu ketika air nira yang diendapkannya selalu habis. Ia menduga pasti ada maling yang mencuri air niranya. Sehingga, ia memutuskan untuk berjaga dan tidak tidur demi menangkap maling itu.
+                    Ia menunggu hingga menjelang subuh dan benar saja maling yang mencuri air nira nya pun muncul. Ternyata ia adalah makhluk yang sering ada di cerita rakyat sekitar bernama sampan si bintang pagi.
+                </p>
+            </div>
+        </section>
+        <!-- paragraf 1 end -->
+
+        <!-- paragraf 2 start -->
+        <section id="malin">
+            <div class="column2">
+                <p>>Makhluk itu terperangkap dan meminta dilepaskan. Namun, sebelum Mananamakrdi melepaskannya ia meminta agar kudisnya bisa sembuh dan seorang istri. Sampan si bintang pagi pun mengatakan. “Pergilah ke pantai yang memiliki pohon bitanggur. Panjatlah dan saat kau melihat gadis sedang mandi, lemparkan biji bittanggur itu dan ia akan menjadi istrimu,” Mananamakrdi pun mengikuti usul itu. Ia melihat gadis cantik yang bernama Insoraki sedang mandi di pinggir pantai dan langsung melemparkan biji bittanggur. Tidak lama kemudian tersiar kabar bahwa Insoraki itu hamil dan akhirnya melahirkan.
+                    Saat upacara peresmian nama anak dari Insoraki, Mananamakrdi pun datang. Kemudian anak yang sudah diberi nama Konori itu menunjuknya sebagai ayahnya. Setelah itu Insoraki dan Mananamakrdi pun dinikahkan. Setelah pernikahannya, penduduk desa mulai terganggu dengan kondisi kudis Mananamakrdi. Mereka pun meninggalkan desa hingga hanya tinggal Mananamakrdi, Insoraki, dan Konori saja. Mananamakrdi yang kesal pun membakar dirinya sendiri. Namun, tak disangka bukannya tewas, kudisnya malah sembuh. Dengan sembuhnya Mananamakrdi, mereka bertiga memutuskan untuk pergi juga.
+                    </p>
+            </div>
+
+            <div>
+                <img src="{{ url_for('static', filename='images/Irian2.png') }}" width="429" height="239">
+            </div>
+        </section>
+        <!-- paragraf 2 end -->
+
+
+        <!-- paragraf 3 start -->
+        <section id="malin">
+            <div>
+            <img src="{{ url_for('static', filename='images/Irian3.png') }}" width="429" height="239">
+            </div>
+
+            <div class="column1">
+            <p>Mereka berlayar menuju pulau Mandori dekat dengan Manokwari. Pagi itu berkabut tipis dan saat matahari mulai naik, kabut tersebut menghilang digantikan dengan pemandangan pulau hijau dan indah. Konori tiba-tiba mengatakan “Irian… Irian” artinya panas. Ibunya memberitahu bahwa maksud Konori itu panas matahari bisa membuka mata untuk melihat pulau yang indah. Begitulah cerita rakyat asal mula nama pulau Irian terbentuk.
+            </p>
+        </div>
+        </section>
+        <!-- paragraf 3 end -->
+
+
+{% endblock %}

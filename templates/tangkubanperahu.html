@@ -1,0 +1,150 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Tangkuban Perahu
+{% endblock %}
+
+{% block main %}
+
+    <h1>Tangkuban Perahu</h1>
+    <div class="wrapper">
+    <!-- paragraf 1 start-->
+        <section>
+            <div>
+            <!-- ini versi embedding dari link youtube tinggal copy aja linknya dr youtube kesini -->
+                <iframe width="429" height="239" src="https://www.youtube.com/embed/X6IrY6aHGXo?si=YWeC9s7BsWrDlGxR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <figure>
+                    <figcaption>
+                        Listen to the audio of "Tangkuban Perahu story"
+                    </figcaption>
+                    <audio controls src="static/audios/tangkubanperahu.ogg">
+                        Browser tidak mendukung tag <code>audio</code>
+                    </audio>
+                </figure>
+            </div>
+
+
+            <div class="column1">
+                <p>Pada zaman dahulu, hiduplah seorang perempuan cantik bernama Dayang Sumbi. Ia memiliki seorang anak laki-laki yang diberi nama Sangkuriang.
+                    Keduanya tinggal di sebuah rumah bersama dengan seekor anjing setia yang selalu menjaga ibu dan anak tersebut. Tak ada yang tahu bahwa Dayang Sumbi
+                    sebenarnya adalah seorang dewi dari khayangan, dan anjing bernama Tumang tersebut adalah suaminya. Dayang Sumbi dan Tumang dikutuk oleh dewa karena sebuah kesalahan.
+                    Mereka harus turun ke bumi dan tinggal sebagai seorang manusia dan seekor anjing. Keduanya menerima dan menjalani hukuman tersebut dengan lapang dada.</p>
+            </div>
+        </section>
+    <!-- paragraf 1 end -->
+
+    <!-- paragraf 2 start -->
+        <section>
+            <div class="column2">
+                <p>Sangkuriang muda sangat gemar berburu. Saat berburu, ia selalu ditemani oleh Tumang. Mereka berdua sangat cekatan dalam memburu mangsa. Tumang mengejar rusa, bahi hutan atau kelinci hingga mereka tersudut, lalu Sangkuriang menombak hewan buruan tersebut. Hampir setiap selesai berburu, keduanya membawa banyak hewan untuk dimakan atau dijual.
+                    Pada suatu hari, Sangkuriang pergi berburu lagi dengan Tumang. Anak muda itu melihat seekor kijang, dan ingin memburunya. Ia memberi perintah pada Tumang untuk menyergap kijang tersebut lalu mengejarnya. Setelah mengendap-endap agar tak ketahuan, Tumang segera mengejar mangsanya
+                    Namun ternyata kijang itu berlari sangat cepat, jauh Iebih cepat daripada kijang lain yang pernah mereka buru. Sangkuriang yang ikut mengejar dari belakang terengah-engah kehabisan napas. Setelah beberapa lama, ia sampai di pinggir sungai dan melihat Tumang sedang mengendus-endus kebingungan.
+                    “Tumang, di mana kijang itu? Apakah kau kehilangan jejaknya?” teriak Sangkuriang dengan nada kesal. Tumang hanya bisa menyalak. Kijang itu melesat bagai anak panah, dan anjing tersebut tak mampu mengejarnya. Air sungai membuat penciumannya melemah, ia tak dapat mengendus jejak kijang untuk mengetahui ke arah mana hewan itu berlari.
+                </p>
+            </div>
+
+            <div>
+                <img src="{{ url_for('static', filename='images/sangkuriang-berburu.png') }}" width="429" height="239">
+            </div>
+        </section>
+    <!-- paragraf 2 end -->
+
+
+    <!-- paragraf 3 start -->
+        <section>
+            <div>
+                <img src="{{ url_for('static', filename='images/sangkuriang-gagal-dapat-mangsa.png') }}" width="429" height="239">
+            </div>
+
+            <div class="column1">
+                <p>Betapa marahnya Sangkuriang. ia sangat menginginkan kijang itu, dan mereka sudah berlari demikian jauh untuk mengejarnya.
+                    ”Kau ini bagaimana sih?” umpat Sangkuriang. “Bagaimana mungkin kau kehilangan jejak kijang itu. Dasar anjing bodoh!” Dengan marah, diambilnya sebuah batu dari pinggir sungai dan dilemparkannya ke arah Tumang. Batu tersebut tepat mengenai kepalanya dan membuatnya tersungkur.
+                    Sangkuriang terkejut dengan apa yang baru saja dilakukannya. Segera dipeluknya Tumang yang tak bergerak lagi. Kepala anjing tersebut penuh darah, matanya terpejam dan napasnya mulai tak terdengar.
+                    “Tumang… Tumang…. Maafkan aku!” jerit Sangkuriang dengan panik.
+                    “Aku tak bermaksud membuat kepalamu terluka. Tadi aku hanya kesal saja. Bangunlah Tumang, jangan mati.”
+                    Sayang sekali, darah di kepala Tumang begitu banyak hingga akhirnya anjing itu menghembuskan napas terakhirnya. Sangkuriang menangis sedih. Ia menyesali perbuatannya, namun nasi telah menjadi bubur. Anjing kesayangannya telah mati.
+                    Sangkuriang menangis cukup lama sebelum akhirnya ia menguburkan Tumang. Setelah selesai, ia berjalan pulang dengan lunglai. Hatinya sangat pilu.
+                </p>
+            </div>
+        </section>
+    <!-- paragraf 3 end -->
+
+
+    <!-- paragraf 4 start -->
+        <section>
+            <div class="column2">
+                <p>Sesampainya di rumah, ia menceritakan apa yang terjadi pada ibunya. Dayang Sumbi yang terperanjat atas kematian Tumang langsung melampiaskan kemarahannya pada Sangkuriang. Ia mengambil sendok kayu yang biasa digunakan untuk menanak nasi, lalu dipukulkannya sendok itu ke kepala Sangkuriang dan mengenai dahinya.
+                    “Pergi kau, anak kurang ajar! Berani-beraninya kau membunuh Tumang yang begitu setia padamu!”
+                    “Tapi, Ibu….
+
+                    “Pergi kau! Jangan pernah kembali lagi!” Dayang Sumbi mengusir anaknya dengan penuh kemurkaan. Sangkuriang pun meninggalkan rumah dengan dahi terluka dan hati yang pedih. Ia berjalan tak tentu arah, menuju ke mana saja kakinya melangkah. Berkelana dari satu daerah ke daerah lain.
+                </p>
+            </div>
+
+            <div>
+                <img src="{{ url_for('static', filename='images/sangkuriang-dimarahi.png') }}" width="429" height="239">
+            </div>
+        </section>
+    <!-- paragraf 4 end -->
+
+    <!-- paragraf 5 start -->
+        <section>
+            <div>
+                <img src="{{ url_for('static', filename='images/sangkuriang-bertemu-dayangsumbi.png') }}" width="429" height="239">
+            </div>
+
+            <div class="column1">
+                <p>Hingga suatu hari, Sangkuriang sampai di sebuah desa. Sebenarnya desa itu adalah desa kelahirannya, namun Sangkuriang tak mengenali karena ada begitu banyak perubahan di sang, Selain itu, luka di kepalanya saat dipukul ibunya dulu serta rasa tertekannya akibat kematian Tumang dan pengusiran Dayang Sumbi membuatnya melupakan masa kecilnya. Ketika beristirahat sejenak di sebuah kedai minum, Sangkuriang melihat sosok seorang wanita. ia terpana akan kecantikannya dan berniat untuk menikahi wanita itu. Sangkuriang tak tahu bahwa wanita itu adalah Dayang Sumbi. Oleh karena Dayang Sumbi adalah keturunan dewa sehingga ia tak bisa menua. Wajahnya semuda gadis-gadis remaja, dan hal itulah yang membuat Sangkuriang tak mengenali ibunya sendiri.
+                    Dayang Sumbi pun awalnya tak mengetahui siapa Sangkuriang, sebab anaknya itu telah tumbuh menjadi pemuda gagah dan tampan. Ketika Sangkuriang mendekatinya, ia tak menaruh curiga sama sekali hingga ia melihat bekas luka di dahi pemuda itu. Seketika tahulah ia bahwa pemuda itu adalah Sangkuriang, anaknya.
+                </p>
+            </div>
+        </section>
+    <!-- paragraf 5 end -->
+
+    <!-- paragraf 6 start -->
+        <section>
+            <div class="column2">
+                <p>Dayang Sumbi menjadi sangat ketakutan, terutama karena Sangkuriang tak memercayai penjelasannya. Pemuda yang kasmaran itu bersikeras melamar Dayang Sumbi. Karena kehabisan akal, Dayang Sumbi pun mengajukan dua syarat. Pertama, Sangkuriang harus membendung sungai Citarum, dan syarat kedua, Sangkuriang harus membuat sampan besar untuk menyeberang sungai itu. Kedua syarat itu harus sudah dipenuhi sebelum fajar menyingsing.
+                    Dayang Sumbi mengira kedua syaratnya akan membuat Sangkuriang mundur. Ia tak tahu bahwa anaknya itu memiliki kesaktian. Dengan cepat, Sangkuriang menyanggupi permintaan tak masuk akal tersebut.
+                    Malam itu Sangkuriang melakukan tapa, mengumpulkan kesaktian dan mengerahkan mahluk-mahluk gaib untuk membantu menyelesaikan pekerjaan membendung sungai. Dayang Sumbi yang diam-diam mengintip pekerjaan tersebut merasa cemas.
+                    “Bagaimana jika Sangkuriang berhasil menyelesaikannya? Tak mungkin aku menikah dengan anakku sendiri.”
+                </p>
+            </div>
+
+            <div>
+                <img src="{{ url_for('static', filename='images/dayangsumbi-memberi-syarat.png') }}" width="429" height="239">
+            </div>
+        </section>
+    <!-- paragraf 6 end -->
+
+    <!-- paragraf 7 start -->
+        <section>
+            <div>
+                <img src="{{ url_for('static', filename='images/dayangsumbi-memohon.png') }}" width="429" height="239">
+            </div>
+
+            <div class="column1">
+                <p>Dayang Sumbi pun memutar otak. Begitu pekerjaan Sangkuriang hampir selesai, Dayang Sumbi menggelar selendang sutra merah, lalu berdoa pada dewa di khayangan untuk membantunya. Selendang merah itu terbang ke arah Timur, dan menutup sebagian langit. Orang-orang mengira matahari sudah terbit di ufuk karena langit sudah memerah.</p>
+            </div>
+        </section>
+    <!-- paragraf 7 end -->
+
+    <!-- paragraf 8 start -->
+        <section>
+            <div class="column2">
+                <p>Sangkuriang terkejut dan tak mengira pagi datang lebih cepat dari perkiraannya. Ia pun segera mengetahui bahwa hal tersebut adalah ulah Dayang Sumbi yang tak ingin menikah dengannya. Karena patah hati, Sangkuriang menjadi marah. Ia mengamuk, menjebol bendungan yang dibuatnya. Air bendungan menerjang dan mengakibatkan banjir badang. Penduduk desa ketakutan dan berlarian mencari tempat aman.
+                    Kemarahan Sangkuriang tak berhenti sampai di situ. Ia pun menendang sampan besar hingga terpental jauh. Kesaktiannya membuat sampan tersebut jatuh terbalik dan berubah menjadi sebuah gunung. Hingga saat ini, gunung yang bentuknya mirip sampan terbalik itu masih bisa dilihat, namanya adalah gunung Tangkuban Perahu.
+                </p>
+            </div>
+
+            <div>
+                <img src="{{ url_for('static', filename='images/sangkuriang-marah.png') }}" width="429" height="239">
+                <img src="{{ url_for('static', filename='images/gunung-tangkuban -perahu.png') }}" width="429" height="239">
+            </div>
+        </section>
+    <!-- paragraf 8 end -->
+
+
+    </div>
+
+{% endblock %}

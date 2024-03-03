@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Java
+{% endblock %}
+
+{% block main %}
+
+    <h2>The Tales of Java</h2>
+    <div class="container-lg">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card" style="width: 19rem;">
+                    <img src="{{ url_for('static', filename='images/lutungkasarung.png') }}" class="card-img-top" width="269" height="161">
+                    <div class="card-body">
+                        <h5 class="card-title">Lutung Kasarung</h5>
+                        <p class="card-text">Pada zaman dahulu, hiduplah seorang perempuan cantik bernama Dayang Sumbi.</p>
+                        <a href="/lutungkasarung" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card" style="width: 19rem;">
+                    <img src="{{ url_for('static', filename='images/rorojonggrang.jpeg') }}" class="card-img-top" width="269" height="161">
+                    <div class="card-body">
+                        <h5 class="card-title">Roro Jonggrang</h5>
+                        <p class="card-text">Dahulu kala, ada sebuah kerajaan bernama Prambanan. Kerajaan itu dipimpin oleh Prabu Baka. </p>
+                        <a href="/rorojonggrang" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-4">
+                <div class="card" style="width: 19rem;">
+                    <img src="{{ url_for('static', filename='images/tangkubanperahu.jpg') }}" class="card-img-top" width="269" height="161">
+                    <div class="card-body">
+                        <h5 class="card-title">Tangkuban Perahu</h5>
+                        <p class="card-text">Dahulu kala, hiduplah seorang putri yang bernama Purbasari anak bungsu dari enam orang </p>
+                        <a href="/tangkubanperahu" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <video autoplay loop muted play-inline class="background-video">
+        <source src="{{ url_for('static', filename='ocean.mp4') }}" type="video/mp4">
+    </video>
+
+{% endblock %}

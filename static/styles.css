@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.all content {
+    background: #f7f5f2;
+}
+
+html:: -webkit-scrollbar-track {
+    background: transparent;
+}
+
+html:: -webkit-scrollbar-thumb {
+    background: #b2744c;
+    border radius: 10px;
+}
+
+html :: -webkit-scrollbar {
+    width: 10px;
+}
+
+/* navbar start */
+#navbar {
+    background-color: #f7f5f2;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+#logo img {
+    border-radius: 10px;
+    width: 120px;
+    margin-left: 20px;
+}
+
+#collapse navbar-collapse {}
+
+.navbar-nav {
+    margin-left: 50px;
+}
+
+.nav-item .nav-link {
+    margin-left: 40px;
+    transition: 0.5s;
+}
+
+.nav-item .nav-link:hover {
+    background: #f7f5f2;
+    border-radius: 100px;
+    color: grey;
+}
+
+#navbar form button {
+    background: #bc9c22;
+    color: white;
+    border: 1px solide white;
+}
+
+#nav nav-pills {
+    background: #bc9c22;
+    color: white;
+    border: 1px solide white;
+}
+
+/* navbar end */
+
+/* index background video start */
+.background-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0.5;
+}
+h6 {
+    color: #fff;
+    font-size: 10px;
+    margin-left: 900px;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .back-video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .back-video {
+        width: auto;
+        height: 100%;
+    }
+
+    .maps-homepage {
+        position: fixed;
+    }
+}
+
+/* About us start */
+.aboutus {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)), url('aboutus_background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero {
+    width: 80%;
+    margin: auto;
+    padding: 30px 0px;
+}
+
+.textabout {
+    color: #fff;
+
+}
+
+.box-icon {
+    margin-top: 30px;
+    width: 250px;
+    height: 150px;
+    background: #f7f5f2;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 370px;
+    backdrop-filter: blur(15px);
+}
+h4{
+    margin-top: 40px;
+}
+img {
+    margin: auto;
+    display: block;
+
+}
+
+/* About us end */
+
+/* sign-in-up box start */
+.sign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url('backgroundsign.jpg');
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.signin-box {
+    margin-top: 70px;
+    width: 350px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(15px);
+}
+
+h3 {
+    margin-top: 50px;
+    font-size: 2em;
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 0px;
+    font-size: 2em;
+    color: white;
+    text-align: center;
+}
+
+.input-box {
+    width: 280px;
+    margin: 30px 0;
+    positions: relative;
+    border-bottom: 2px solid white
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #fff;
+    pointer-events: none;
+    transitions: .5s;
+}
+
+.input-box input {
+    width: 100px;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #fff;
+    padding: 0 5px 0 0px;
+}
+
+.input-box .icon {
+    position: absolute;
+    right: 8px;
+    color: white;
+    font-size: 1.2em;
+    line-height: 57px;
+}
+
+.remember-me {
+    margin: -15px 0 15px;
+    font-size: .9em;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember-me label input {
+    margin-right: 3px;
+}
+
+.remember-me a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.remember-me a:hover {
+    text-decoration: underline;
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    background: #bc9c22;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    color: white;
+    font-weight: 500;
+}
+
+.signup-link {
+    font-size: .9em;
+    color: white;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.signup-link p a {
+    color: white;
+    text-decoration: underline;
+}
+
+.signup-link p a:hover {}
+
+@media(max-width: 360px) {
+    .signin-box {
+        width: 100%;
+        height: 100vh;
+        border: none;
+        border-radius: 0;
+    }
+
+    .input-box {
+        width: 290px;
+    }
+}
+
+/* sign-in-up box end */
+
+
+.container-lg img {
+    background-color: #bc9c22;
+    padding: 10px;
+    width: 100%;
+}
+
+/* layout story */
+section {
+    margin-top: 50px;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.column1 {
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 20px;
+    text-align: justify;
+    font-family: 'comic sans';
+    font-weight: 800;
+    color: #595959;
+    width: 100%;
+    line-weight: 50px;
+}
+
+.column2 {
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 20px;
+    text-align: justify;
+    font-family: 'comic sans';
+    font-weight: 800;
+    margin-bottom: 50px;
+    color: #595959;
+    width: 100%;
+    line-weight: 50px;
+}
+
+.pict-malin-P2 {
+    margin bottom: 10px;
+}
+
+
+.mb-3{
+    margin-top: 20px;
+}

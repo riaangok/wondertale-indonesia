@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Sumatera
+{% endblock %}
+
+{% block main %}
+
+<div class="container-lg">
+        <h2>The Tales of Sumatera</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card" style="width: 19rem;">
+                    <img src="{{ url_for('static', filename='images/MK 2.png') }}" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Malin Kundang </h5>
+                        <p class="card-text">Di suatu Pantai di Padang, hiduplah seorang ibu bersama anak laki-lakinya yang bernama Malin Kundang.</p>
+                        <a href="/malin" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card" style="width: 19rem;">
+                    <img src="{{ url_for('static', filename='images/danautoba.jpg') }}" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Danau Toba</h5>
+                        <p class="card-text">Di sebuah desa di wilayah Sumatera Utara, hidup seorang petani muda bernama Toba yang rajin bekerja</p>
+                        <a href="/danautoba" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-4">
+                <div class="card" style="width: 19rem;">
+                    <img src="{{ url_for('static', filename='images/naimanggale.jpg') }}" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Nai Manggale</h5>
+                        <p class="card-text">Di sebuah zaman, hidup seorang raja bernama Raja Panggan, dia ahli memahat dan mengukir..</p>
+                        <a href="/naimanggale" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <video autoplay loop muted play-inline class="background-video">
+        <source src="{{ url_for('static', filename='ocean.mp4') }}" type="video/mp4">
+    </video>
+
+{% endblock %}

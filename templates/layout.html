@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+
+        <!-- http://getbootstrap.com/ -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+        <!-- google font  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lilita+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+        <!-- icon by tamplate canva -->
+        <link href="/static/wondertale.ico" rel="icon">
+
+        <!-- link to the style.css -->
+        <link href="/static/styles.css" rel="stylesheet">
+
+
+        <title>Wondertale: {% block title %}{% endblock %}</title>
+
+    </head>
+
+    <body>
+        <!-- adapted from https://getbootstrap.com/docs/5.3/components/navbar/ -->
+
+
+        <nav class="navbar navbar-expand-lg" id="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#" id="logo"><img src="/static/logo_wondertale.png" width="150"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- display when the user is logged in -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    {% if session["user_id"] %}
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/">Home</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Stories
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="/sumatera">Sumatera</a></li>
+                                    <li><a class="dropdown-item" href="/java">Java</a></li>
+                                    <li><a class="dropdown-item" href="/sulawesi">Sulawesi</a></li>
+                                    <li><a class="dropdown-item" href="/kalimantan">Kalimantan</a></li>
+                                    <li><a class="dropdown-item" href="/papua">Papua</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="/about">About Us</a>
+                            </li>
+                        </ul>
+
+
+
+                            <ul class="nav nav-pills">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="/create" style="background-color:#bc9c22;">Create a Story</a>
+                                </li>
+                                <ul class="nav nav-pills">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/library" style="background-color:#bc9c22;">Library</a>
+                            </li>
+                            <ul class="nav nav-pills">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="/signout" style="background-color:#bc9c22;">Sign Out</a>
+                                </li>
+                            </div>
+                        </div>
+
+                    {% else %}
+
+                    <!-- display when the user is not logged in -->
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/">Home</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Stories
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="/sumatera">Sumatera</a></li>
+                                    <li><a class="dropdown-item" href="/java">Java</a></li>
+                                    <li><a class="dropdown-item" href="/sulawesi">Sulawesi</a></li>
+                                    <li><a class="dropdown-item" href="/kalimantan">Kalimantan</a></li>
+                                    <li><a class="dropdown-item" href="/papua">Papua</a></li>
+
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="/about">About Us</a>
+                            </li>
+                        </ul>
+
+
+                        <ul class="nav nav-pills">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/create" style="background-color:#bc9c22;">Create a Story</a>
+                            </li>
+                            <ul class="nav nav-pills">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="/signin" style="background-color:#bc9c22;">Sign In</a>
+                                </li>
+                    {% endif %}
+                </div>
+            </div>
+        </nav>
+
+
+
+        <main class="container-fluid py-5 text-center">
+            {% block main %}{% endblock %}
+        </main>
+
+    </body>
+
+</html>
+
+

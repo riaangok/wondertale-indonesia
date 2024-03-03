@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Asal Usul Burung Cendrawasih
+{% endblock %}
+
+{% block main %}
+
+    <h1>Asal Usul Burung Cendrawasih</h1>
+    <div class="wrapper">
+    <!-- paragraf 1 start-->
+        <section id="malin">
+            <div>
+            <!-- ini versi embedding dari link youtube tinggal copy aja linknya dr youtube kesini -->
+                <iframe width="429" height="239" src="https://www.youtube.com/embed/CPyXHwdd2pE?si=0iOOffsrwcNDfnU8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <figure>
+                    <figcaption>
+                        Listen to the audio of "Asal Usul Burung Cendrawasih story"
+                    </figcaption>
+                    <audio controls src="static/audios/asal_usul_burung_cendrawasih.ogg">
+                        Browser tidak mendukung tag <code>audio</code>
+                    </audio>
+                </figure>
+            </div>
+
+
+            <div class="column1">
+                <p>Awal mula dari kisah ini yaitu anak perempuan yang bernama Kweiya. Ia tinggal bersama ibu Baria, bapak tirinya yang bernama Pak Bone dan juga kedua adik tirinya. Namun, kedua adik tirinya ini memiliki sifat iri dengan Kweiya ini sebagai kakaknya. Mereka kemudian merencanakan untuk berbuat jahat kepada Kweiya.</p>
+            </div>
+        </section>
+        <!-- paragraf 1 end -->
+
+        <!-- paragraf 2 start -->
+        <section id="malin">
+            <div class="column2">
+                <p>Cerita asal usul burung cendrawasih ini dilanjut dengan adik – adik tiri dari Kweiya yang berusaha untuk menjebak Kweiya. Karena ia sudah tidak tahan dengan sifat dari adiknya – adiknya ini, akhirnya Kweiya pergi meninggalkan rumah untuk sekedar menenangkan diri. Karena pada saat di hutan ini ia tersesat, maka tentu ia pun harus bisa bertahan untuk tetap hidup. Ia pun membangun sebuah rumah kayu yang sangat sederhana. Adapun untuk kulit binatang dari hasil pintalannya ini dibuat untuk sayap.
+                    Kepergian Kweiya ini tentu membuat sang ibu sangat sedih. Kedua adiknya mengarang cerita dimana Kweiya pergi karena tidak ingin hidup bersama. Namun, ibu Kweiya tetap tidak percaya. Ia pun segera mencari tahu kebenarannya seperti apa. Sampai pada akhirnya adik bungsu dari Kweiya ini mengatakan menyesal akan perbuatan yang sudah dilakukannya dengan jujur kepada sang ibu.
+                </p>
+            </div>
+
+            <div>
+                <img src="{{ url_for('static', filename='images/Cen1.png') }}" width="429" height="239">
+            </div>
+        </section>
+        <!-- paragraf 2 end -->
+
+        <!-- paragraf 3 start -->
+        <section id="malin">
+            <div>
+            <img src="{{ url_for('static', filename='images/Cen2.png') }}" width="429" height="239">
+            </div>
+
+            <div class="column1">
+            <p>Akhirnya ibu Kweiya ini bergegas untuk pergi ke hutan. Sekuat tenaga ia terus memanggil – manggil dengan sekuat tenaga tetapi tidak ada sahutan apapun itu. Hingga akhirnya ibunya tersungkur ke tanah dan menangis putus asa karena tak kunjung menemukan Kweiya. Tetapi ibu Kweiya ini melihat seekor burung yang mucul dari pepohonan, hanya suaranya saja yang terdengar. Namun ternyata, ibu Kweiya mulai sadar bahwa burung tersebut merupakan anaknya sendiri. Dari sinilah asal usul burung cendrawasih mulai menjadi cerita bagi masyarakat.
+                Ternyata kenapa asal usul burung cendrawasih ini cukup melegenda sampai sekarang karena ceritanya ini penuh moral yang bisa kita ambil. Mulai dari jangan iri dengki dan jangan pernah menyesal atas perbuatan yang sudah Anda karena memang sejatinya setiap penyesalan itu ada di akhir.
+            </p>
+        </div>
+        </section>
+        <!-- paragraf 3 end -->
+
+{% endblock %}

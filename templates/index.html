@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+    <img src="{{ url_for('static', filename='maps.svg') }}" alt="map of Indonesia" usemap="#workmap" class="maps-homepage">
+    <map name="workmap">
+        <area shape="rect" coords="76,75,128,136" alt="Sumatera" href="/sumatera">
+        <area shape="rect" coords="395,259,457,317" alt="Java" href="/java">
+        <area shape="rect" coords="430,36,476,99" alt="kalimantan" href="/kalimantan">
+        <area shape="rect" coords="625,124,678,172" alt="Sulawesi" href="/sulawesi">
+        <area shape="rect" coords="1120,106,1166,148" alt="Papua" href="/papua">
+    </map>
+    <video autoplay loop muted play-inline class="background-video">
+        <source src="{{ url_for('static', filename='ocean.mp4') }}" type="video/mp4">
+    </video>
+    <audio autoplay loop>
+        <source src="static/audios/Wonderland-Indonesia-by-Alffy-Rev-ft-Novia-Bachmid-Chapter-1.mp3">
+    </audio>
+
+    <h6>audio: Wonderland Indonesia by Alffy Rev ft Novia Bachmid Chapter-1</h6>
+
+{% endblock %}

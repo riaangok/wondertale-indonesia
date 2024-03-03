@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    About Us
+{% endblock %}
+
+{% block main %}
+    <div class="aboutus">
+        <div class="hero">
+            <article class="textabout">
+                <h1 class ="titleabout">About Us</h1>
+                <div class="box-icon">
+                    <img src="{{ url_for('static', filename='logo_wondertale.png') }}">
+
+                </div>
+
+                <h4 class="titlewondertale">Wondertale Indonesia</h4>
+                <p>Wondertale is a website that provides Indonesian folklore. As we know that Indonesia has more than 17.000 islands. At the first step,  this website only covers 5 islands, namely Sumatra, Java, Kalimantan, Sulawei and Papua. The stories are presented in the form of text, sound and video. As the content development, this website also offers the readers to upload other folk tales. With the features on this website, hopefully the readers will become more familiar with Indonesian folklore and the various of Indonesian cultures; be able to tell stories by learning from the audio and or video; and/or make this website as one of the research sources related to Indonesian folklore and cultures.
+                </p>
+            </article>
+        </div>
+    </div>
+{% endblock %}

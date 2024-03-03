@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Timus Mas
+{% endblock %}
+
+{% block main %}
+
+    <h1></h1>
+    <div class="wrapper">
+    <!-- paragraf 1 start-->
+        <section id="malin">
+            <div>
+                {% for stories in story  %}
+
+                <p>{{stories.title}}</p>
+
+                    <iframe width="429" height="239" src="{{stories.video}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <figure>
+                        <figcaption>
+                            Listen to the audio of "Asal Usul Irian story"
+                        </figcaption>
+                        <audio controls src="{{stories.audio}}">
+                        </audio>
+                    </figure>
+
+                    <div>
+                        <p>{{stories.story}}</p>
+                    </div>
+                {% endfor %}
+            </div>
+
+
+{% endblock %}

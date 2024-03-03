@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Sulawesi
+{% endblock %}
+
+{% block main %}
+
+<div class="container-lg">
+        <h2>The Tales of Sulawesi</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card" style="width: 19rem;">
+                    <img src="{{ url_for('static', filename='images/putri_tandampalik.jpg') }}" class="card-img-top" width="269" height="161">
+                    <div class="card-body">
+                        <h5 class="card-title">Legenda Putri Tandampalik</h5>
+                        <p class="card-text">Dahulu dikisahkan, di Sulawesi Selatan berdiri kerajaan bernama Kerajaan Luwu yang dipimpin oleh seorang raja.</p>
+                        <a href="/Putri_Tandampalik" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card" style="width: 19rem;">
+                    <img src="{{ url_for('static', filename='images/batu_bagga.jpg') }}" class="card-img-top" width="269" height="161">
+                    <div class="card-body">
+                        <h5 class="card-title">Legenda Batu Bagga</h5>
+                        <p class="card-text">Pada zaman dahulu kala di pulau Sulawesi, hiduplah seorang pria bernama Intobu.</p>
+                        <a href="/Batu_Bagga" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-4">
+                <div class="card" style="width: 19rem;">
+                    <img src="{{ url_for('static', filename='images/sigarlaki.jpg') }}" class="card-img-top" width="269" height="161">
+                    <div class="card-body">
+                        <h5 class="card-title">Kisah Sigarlaki dan Limbat</h5>
+                        <p class="card-text">Dahulu dikisahkan tentang seorang pemburu yang handal bernama Sigarlaki.</p>
+                        <a href="/Sigarlaki_and_Limbat" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <video autoplay loop muted play-inline class="background-video">
+        <source src="{{ url_for('static', filename='ocean.mp4') }}" type="video/mp4">
+    </video>
+
+{% endblock %}

@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Papua
+{% endblock %}
+
+{% block main %}
+
+    <h2>The Tales of Papua</h2>
+    <div class="container-lg">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card" style="width: 19rem;">
+                    <img src="{{ url_for('static', filename='images/empat_raja.jpg') }}" class="card-img-top" width="269" height="161">
+                    <div class="card-body">
+                        <h5 class="card-title">Empat Raja</h5>
+                        <p class="card-text">Dahulu,sepasang suami istri di tanah Papua yang menanti-nantikan kehadiran anak.</p>
+                        <a href="/Empat_Raja" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card" style="width: 19rem;">
+                    <img src="{{ url_for('static', filename='images/asal_usul_irian.jpg') }}" class="card-img-top" width="269" height="161">
+                    <div class="card-body">
+                        <h5 class="card-title">Asal Usul Irian</h5>
+                        <p class="card-text">Pada zaman dulu ada seorang pria yang mengidap penyakit kudis bernama mananamakrdi</p>
+                        <a href="/Asal_Usul_Irian" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-4">
+                <div class="card" style="width: 19rem;">
+                    <img src="{{ url_for('static', filename='images/asal_usul_burung_cendrawasih.jpg') }}" class="card-img-top" width="269" height="161">
+                    <div class="card-body">
+                        <h5 class="card-title">Asal Usul Burung Cenderawasih</h5>
+                        <p class="card-text">Awal mula dari kisah ini yaitu anak perempuan yang bernama Kweiya... </p>
+                        <a href="/Asal_Usul_Burung_Cendrawasih" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <video autoplay loop muted play-inline class="background-video">
+        <source src="{{ url_for('static', filename='ocean.mp4') }}" type="video/mp4">
+    </video>
+
+{% endblock %}

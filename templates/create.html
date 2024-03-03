@@ -1,0 +1,104 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Create Story
+{% endblock %}
+
+{% block main %}
+<!-- adapted from https://getbootstrap.com/docs/5.3/forms/input-group/ -->
+
+<form action="/save" method="post" class="was-validated">
+    <div class="container">
+        <div class="mb-3">
+            <label for="name" class="form-label">Title</label>
+            <input class="form-control" name="title" id="validationTextarea" placeholder="Title" required></input>
+            <div class="invalid-feedback">
+                Please enter a title
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label for="name" class="form-label">Origin</label>
+            <select name="origin" class="form-select" required aria-label="select example">
+                <option value="" disabled selected>Select Province</option>
+                <option value="1">Aceh</option>
+                <option value="2">Bangka Belitung Islands</option>
+                <option value="3">Bengkulu</option>
+                <option value="4">Jambi</option>
+                <option value="5">Lampung</option>
+                <option value="6">North Sumatera</option>
+                <option value="7">Riau</option>
+                <option value="8">Riau Islands</option>
+                <option value="9">South Sumatera</option>
+                <option value="10">West Sumatera</option>
+                <option value="11">Banten</option>
+                <option value="12">Central Java</option>
+                <option value="13">East Java</option>
+                <option value="14">Special Capital Region of Jakarta</option>
+                <option value="15">Special Region of Yogyakarta</option>
+                <option value="16">West Java</option>
+                <option value="17">Central Kalimantan</option>
+                <option value="18">East Kalimantan</option>
+                <option value="19">North Kalimantan</option>
+                <option value="20">South Kalimantan</option>
+                <option value="21">West Kalimantan</option>
+                <option value="21">Bali</option>
+                <option value="22">West Nusa Tenggara</option>
+                <option value="23">East Nusa Tenggara</option>
+                <option value="24">Central Sulawesi</option>
+                <option value="25">Gorontalo</option>
+                <option value="26">North Sulawesi</option>
+                <option value="27">South Sulawesi</option>
+                <option value="28">Southeast Sulawesi</option>
+                <option value="29">West Sulawesi</option>
+                <option value="30">Maluku</option>
+                <option value="31">North Maluku</option>
+                <option value="32">Central Papua</option>
+                <option value="33">Highland Papua</option>
+                <option value="34">Papua</option>
+                <option value="35">South Papua</option>
+                <option value="36">Southwest Papua</option>
+                <option value="37">West Papua</option>
+                <option value="38">West Papua</option>
+            </select>
+            <div class="invalid-feedback">Example invalid select feedback</div>
+        </div>
+
+        <div class="mb-3">
+            <label for="validationTextarea" class="form-label">Story</label>
+            <textarea name="story" class="form-control" rows="10" id="validationTextarea" placeholder="Enter the story here" required></textarea>
+            <div class="invalid-feedback">
+                Please enter a message in the textarea.
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label for="validationCustomUsername" class="form-label" placeholder="Link Image">Image Link</label>
+            <div class="input-group has-validation">
+                <span class="input-group-text" id="inputGroupPrepend">http//:</span>
+                <input name="image" type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                <div class="invalid-feedback">
+                    Please enter link source
+                </div>
+            </div>
+
+            <label for="validationCustomUsername" class="form-label" placeholder="Link Video">Video Link</label>
+            <div class="input-group has-validation">
+                <span class="input-group-text" id="inputGroupPrepend">http//:</span>
+                <input name="video" type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend">
+
+            </div>
+
+            <label for="validationCustomUsername" class="form-label" placeholder="Link Audio">Audio Link</label>
+            <div class="input-group has-validation">
+                <span class="input-group-text" id="inputGroupPrepend">http//:</span>
+                <input name="audio" type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" >
+
+            </div>
+
+            <div class="mb-3">
+                <button class="btn btn-primary" type="submit" style="background-color: #bc9c22;">Submit form</button>
+            </div>
+        </div>
+    </form>
+{% endblock %}
