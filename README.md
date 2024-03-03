@@ -2,7 +2,7 @@
 
 It's a growing and dynamic website which provides folktales (text, audio and video) from Indonesia. This web also offers the readers to upload another folktale.
 
-Link to the video: https://youtu.be/rwiYqlI_xEo
+Link to the video: https://s.id/Wondertale-Indonesia
 
 Aims of Wondertale Indonesia:
 1. To introduce all folklore of Indonesia globally

@@ -1,7 +1,7 @@
 # Overview
 `Wondertale Indonesia` is  Web-based application developed with python, HTML, and CSS. the main modules used to develope `Wondertale Indonesia`  is using web application framework `Flask, you can see for more detail [here](https://palletsprojects.com/p/flask/), then we using [CS50 Library](https://cs50.readthedocs.io/libraries/cs50/python/) for Python, and for the database we used is [SQLite](https://www.sqlite.org/index.html).
 
-link to the wondertale video, and how to enjoy read the folktale : [Wondertale Indonesia](https://youtu.be/rwiYqlI_xEo)
+link to the wondertale video, and how to enjoy read the folktale : [Wondertale Indonesia]( https://s.id/Wondertale-Indonesia )
 
 
 # Details
