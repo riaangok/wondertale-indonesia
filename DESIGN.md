@@ -33,6 +33,7 @@ CREATE TABLE 'stories' (
 
 ## structure
 ![Alt text](https://github.com/riaangok/wondertale-indonesia/blob/master/static/image.png?raw=true)
+
 all the resources that used in this web are located inside the `static`, meanwhile `templates` stores all the HTML files that render the results returned by `app.py`.
 `helpers.py` is to implementation of apology, it ultimately renders a tamplate `apology.html`. it also happens to define several functions, we adapted by the famous CS50's apology from `finance`
 
