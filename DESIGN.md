@@ -22,7 +22,7 @@ CREATE TABLE 'users' (
 ```
 `stories` table: to store data such as folklore titles, folklore regions of origin, cover images, video links, and audio links.
 
-```
+```sql
 CREATE TABLE 'stories' (
 	id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
 	title TEXT NOT NULL,
