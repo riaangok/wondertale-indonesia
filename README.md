@@ -1,8 +1,15 @@
 # 1. Wondertale Indonesia Description
 
-It's a growing and dynamic website which provides folktales (text, audio and video) from Indonesia. This web also offers the readers to upload another folktale.
+Wondertale is a website that provides Indonesian folklore. As we know that Indonesia has more than 17.000 islands. At the first step,  this website only covers 5 islands, namely Sumatra, Java, Kalimantan, Sulawei and Papua. The stories are presented in the form of text, sound and video. As the content development, this website also offers the readers to upload other folk tales. With the features on this website, hopefully the readers will become more familiar with Indonesian folklore and the various of Indonesian cultures; be able to tell stories by learning from the audio and or video; and/or make this website as one of the research sources related to Indonesian folklore and cultures.
 
 Link to the video: https://s.id/Wondertale-Indonesia
+
+To get the web-app by github: https://github.com/riaangok/wondertale-indonesia
+
+or
+
+To get the web-app by Gdrive: https://s.id/FP-Gdrive-Wondertale-Indonesia
+
 
 Aims of Wondertale Indonesia:
 1. To introduce all folklore of Indonesia globally
@@ -49,31 +56,43 @@ Refer to this documentation to install and configure Git: https://git-scm.com/bo
 
  1. Log into https://cs50.dev/ , click on your terminal window, and execute cd by itself. You should find that your terminal window’s prompt resembles the below:
 
+    ```
     $
+    ```
 
     Upload zip - file in order to download a ZIP called .zip into your codespace.
 
     Then execute
 
+    ```
     unzip wondertale.zip
+    ```
 
     to create a folder called finance. You no longer need the ZIP file, so you can execute
 
+    ```
     rm wondertale.zip
+    ```
 
     and respond with “y” followed by Enter at the prompt to remove the ZIP file you downloaded.
 
     Now type
 
+    ```
     cd wondertale
+    ```
 
     followed by Enter to move yourself into (i.e., open) that directory. Your prompt should now resemble the below.
 
+    ```
     wondertale/ $
+    ```
 
     Execute ls by itself, and you should see a few files and folders:
 
+    ```
     app.py  story.db  helpers.py     static/  templates/
+    ```
 
     If you run into any trouble, follow these same steps again and see if you can determine where you went wrong!
 
@@ -81,32 +100,35 @@ Refer to this documentation to install and configure Git: https://git-scm.com/bo
 
 1. Open the terminal, then type
 
+    ```
     $ wondertale/ flask run
+    ```
+    Visit the URL outputted by flask to see the distribution code in action.
 
 2. Open the web from the terminal.
-    ![Alt text](homewi.png)
+    ![Alt text](static/homewi.jpg)
 
 3. If the you want to read the story, you just click the button of the maps for each island, or go to stories feature.
-![Alt text](storieswi.png)
+![Alt text](static/storieswi.jpg)
 
     In stories feature, you can choose one of the island that provided. After you click one of the island, you will enter to the stories.
-![Alt text](sumaterawi.png)
+![Alt text](static/sumaterawi.jpg)
 
 4. Choose one of the story inside that page. After you open it, example, Malin Kundang, the page will provide you a text of the story, sound of the story and video of the story which embedded to youTube.
-![Alt text](malinwi.png)
+![Alt text](static/malinwi.jpg)
 
 5. After exploring your stories, you can move to another feature. It's create a story. In this page, it's required you to have an account.
     If you don't have it, you just register in simple steps. Just create a username, password and confirm it.
-![Alt text](signinwi.png)
+![Alt text](static/signinwi.jpg)
 
 6. The data that you must upload when creating a story is you must type the title, province, story and upload image link. Beside that, you also can upload sound and or video link. But for both of them is just optional.
-![Alt text](createwi.png)
+![Alt text](static/createwi.jpg)
 
 7. If you have finished, you just leave the web by signing out.
 
 # 5. Credits
 
- 1. https://www.youtube.com/watch?v=aKtb7Y3qOck Wonderland Indonesia
+ 1. https://www.youtube.com/watch?v=aKtb7Y3qOck - audio backsound “Wonderland Indonesia” by Alffy Rev ft. Novia Bachmid (Chapter 1)
  2. https://youtu.be/rAKUgawbmoY - malinkundang
  3. https://youtu.be/Ixg99LvYHXI - danau toba
  4. https://youtu.be/vAzHrzOtbnM - nai manggale
