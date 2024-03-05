@@ -10,32 +10,35 @@ The database is designed using a relational model because there will be many fol
 
 `users` table: to store the personal data of each user who sign up
 
+```sql
+
 CREATE TABLE 'users' (
 	id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
 	username TEXT NOT NULL,
 	password TEXT NOT NULL,
-    role TEXT CHECK( role IN ('admin', 'user') ) NOT NULL
+	role TEXT CHECK( role IN ('admin', 'user') ) NOT NULL
 );
-    CREATE UNIQUE INDEX username ON users (username);
-
+	CREATE UNIQUE INDEX username ON users (username);
+```
 `stories` table: to store data such as folklore titles, folklore regions of origin, cover images, video links, and audio links.
 
+```
 CREATE TABLE 'stories' (
 	id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
 	title TEXT NOT NULL,
 	origin TEXT NOT NULL,
-    story TEXT NOT NULL,
+	story TEXT NOT NULL,
 	image TEXT NOT NULL,
-    video TEXT NOT NULL,
-    audio TEXT NOT NULL,
-    status EXT NOT NULL DEFAULT 'pending'
+	video TEXT NOT NULL,
+	audio TEXT NOT NULL,
+	status EXT NOT NULL DEFAULT 'pending'
 );
+```
 
 ## structure
-![Alt text](https://github.com/riaangok/wondertale-indonesia/blob/master/static/image.png?raw=true)
-
+![Alt text](static/image.png)
 all the resources that used in this web are located inside the `static`, meanwhile `templates` stores all the HTML files that render the results returned by `app.py`.
-`helpers.py` is to implementation of apology, it ultimately renders a tamplate `apology.html`. it also happens to define several functions, we adapted by the famous CS50's apology from `finance`
+`helpers.py` is to implementation of apology, it ultimately renders a tamplate `apology.html`. it also happens to define several functions, we adapted by CS50's apology from `finance`
 
 # Challenges
 1. Due to we display a map on our homepage which a certain coordinate point, we are still difficult in creating our web more responsive.
